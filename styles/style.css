@@ -134,19 +134,15 @@ Media Queries
     }
 }
 /* Tablet Devices */
-@media only screen and (min-width: 689px)(max-width: 1180px) {
+@media screen and (min-width: 688px) and (max-width: 992px) {
     .container{
         width: 100%;
     }
-    .players{
-        background-color: chartreuse;
+    .players, .latest{
+        grid-template-columns: repeat(2,1fr);
     }
-    /* .players, .blogs, .latest{
-        background-color: chartreuse;
-        grid-template-columns: repeat(1, 1fr);
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
     }
-    .player, .blog{
-        display: flex;
-        flex-direction: column;
-    } */
+    
 }
